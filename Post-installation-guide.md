@@ -53,3 +53,9 @@ For downloading from the AUR, I'd recommend first downloading yay by running `gi
 
 > Just go to the official repository and search for things you want like a specific app name or a keyword to find available options.
 > Another good source of packages is the KDE apps (all are in the official repo as well) by going to https://apps.kde.org/.
+
+# Guidance going forward
+Though I'll be updating this guide every once in a while, I, of course, can't cover the entirety of Arch on here, no matter how many years I'd dedicate.
+Your main source should always be the [Arch Wiki](https://wiki.archlinux.org/title/Main_page), and, thankfully for all of us, the wiki is absolutely amazing, probably the best documented source I know of any project ever. Feel free to either search on the wiki itself or, like me, just go to your search engine and type "arch (thing)" and see if there's any wiki or forum page about it. For example, if you want to learn more about `wayland` now that you're most likely using it, or face an error related to it, just search "arch wayland", give the wiki page of it a nice read and if you don't feel satisfied check other search results. I would _generally_ advise against searching for youtube videos since stuff gets out of date quite quickly.
+The language on the wiki can sometimes come across as very matter of fact, just using terms that you're expected to already know and moving on. Usually there's links to other wiki pages that tend to answer any questions, though feel free to check forums for things like "how to set environment variables" on topics where the explanations are hard to understand (environment variables took me quite a bit to grasp).
+Also, again, Arch forum. Many times I've been saved from an error because of a random user years before me having the same issue, receiving 0 replies, and coming back to their post to say how they fixed it.
