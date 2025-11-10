@@ -1,3 +1,8 @@
+# Installation preparation
+Refer to [the pre-installation steps](./Installation-preparation.md).
+
+# Installation
+
 > For readability use `setfont -d` and whenever the screen gets cluttered either `ctrl+l` or  type `clear`.
 > For changing keyboard layout (default is en_us), use `loadkeys [whatever]` , like `loadkeys de-latin1` for a typical german keyboard. Other layouts can be listed with `localectl list-keymaps`.
 
