@@ -165,3 +165,5 @@ If, after logging in to your desktop environment again, the cursor moves smoothl
 Here is where you can now confidently download steam by running `sudo pacman -S steam` and going with the options that best align with your GPU instead of just defaults.
 
 Now go enjoy your arch linux, and be sure to tell everyone you know that you use arch at every opportunity.
+
+For other general information for getting used to arch, go to the [post-installation guide](Post-installation-guide.md).
