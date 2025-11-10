@@ -37,7 +37,7 @@ Here I'll just show a common one with three partitions, similar to what you'd ge
 To see the partitions, use `lsblk`.
 
 #### Partition formatting
-> Assuming the partitions made are under /dev/sda when listed with `lsblk`, specifically, with root under sda1, swap under sda2, and root under sda3. Adapt if under sdb or another name.
+> Assuming the partitions made are under /dev/sda when listed with `lsblk`, specifically, with boot under sda1, swap under sda2, and root under sda3. Adapt if under sdb or another name.
 
 1. For formatting the root partition as ext4, use `mkfs.ext4 /dev/sda3`
 2. For formatting the boot partition as fat32, use `mkfs.fat -F 32 /dev/sda1`
