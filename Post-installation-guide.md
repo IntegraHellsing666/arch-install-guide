@@ -38,6 +38,8 @@ For downloading from the AUR, I'd recommend first downloading yay by running `gi
 - For flatpaks, uninstall in `Discover` or run `flatpak uninstall [name]`.
 - For AUR, same as official, `sudo yay -Runs [name]`.
 
+> As a note, if you want to check if you already have a package on your system, you can use `pacman -Q [name]`.
+
 # Recommendations for a great system
 - Get a firewall like `firewalld` from the official repository, enable it with `sudo systemctl enable firewalld` and restart your system (or start it with `sudo systemctl start firewalld`).
 - Get `filelight` from the official repository for better visualising disk space usage.
