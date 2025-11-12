@@ -9,6 +9,8 @@ If you wanna use your terminal a bunch, here are some of the most useful command
 - `rm [file]` will delete a file or, to delete a folder, use `rm -rf [directory]`
 - `cp [file] [target]` will copy a file (or multiple) into the specified location, like `cp example.txt example2.txt ../Desktop/` would copy the two text files into Desktop from a location like Downloads.
 - `mv [file] [target]` will move a file (or multiple) to the specified location, like `mv example.txt examplefolder/` would move the text file into a folder inside the current directory.
+- `mkdir [name]` will create a directory with the specified name, you can create multiple by adding a space `mkdir folder1 folder2` or, to make one with a space in its name, use quotes `mkdir "example folder"`.
+- `[command] -h` the h flag (or --help) is, for almost all commands and tools, a way to get documentation about a command's usage, similar to `man [command]` which gives you a tool's manual (usually has more detail, though `-h` is more universal).
 
 # Package management
 ## Downloading packages
