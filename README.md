@@ -74,7 +74,7 @@ Here:
 > You can also get easier access to documentation by getting `man-db` and `man-pages`, so then if you have any questions about a tool, you can use `man [tool name]` to get the wiki page on your terminal.
 
 ## Fstab
-Use `genfstab /U /mnt >> /mnt/etc/fstab`.
+Use `genfstab -U /mnt >> /mnt/etc/fstab`.
 Confirm the contents by using `cat /mnt/etc/fstab`.
 
 ## Chroot
