@@ -44,6 +44,7 @@ For downloading from the AUR, I'd recommend first downloading yay by running `gi
 
 # Recommendations for a great system
 - Get a firewall like `firewalld` from the official repository, enable it with `sudo systemctl enable firewalld` and restart your system (or start it with `sudo systemctl start firewalld`).
+- Get `dolphin` from the official repository as a file explorer if you haven't yet.
 - Get `filelight` from the official repository for better visualising disk space usage.
 - Get `gwenview` from the official repository for viewing images and videos (or `vlc` for videos if you prefer).
 - Get `calibre` for E-book management.
