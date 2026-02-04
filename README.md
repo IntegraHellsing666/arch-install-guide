@@ -149,7 +149,7 @@ If you poor soul have a NVIDIA graphics card like me, don't worry, the driver in
 
 Hopefully you already know your GPU model, but if you don't, then you can check it the extra nice way by downloading hyfetch and fastfetch with `sudo pacman -S hyfetch fastfetch`. Then `hyfetch -c`, select the options you want and after saving the configuration run `hyfetch`. Now you can both flex your new arch installation and know your GPU.
 
-Check https://wiki.archlinux.org/title/NVIDIA, specifically, the table at the beginning with the GPU families and driver options. To find out your GPU's family go to https://nouveau.freedesktop.org/CodeNames.html and `ctrl+f` the model you have. From there, check where that lands on the arch wiki table and note the drivers associated with it. ___In theory___, for modern cards, a solid option would be downloading nvidia (or nvidia-open), nvidia-utils and nvidia-settings with the command `sudo pacman -S nvidia nvidia-utils nvidia-settings` and rebooting.
+Check https://wiki.archlinux.org/title/NVIDIA, specifically, the table at the beginning with the GPU families and driver options. To find out your GPU's family go to https://nouveau.freedesktop.org/CodeNames.html and `ctrl+f` the model you have. From there, check where that lands on the arch wiki table and note the drivers associated with it. ___In theory___, for modern cards, a solid option would be downloading nvidia-open (nvidia is no longer supported), nvidia-utils and nvidia-settings with the command `sudo pacman -S nvidia-open nvidia-utils nvidia-settings` and rebooting.
 
 Because NVIDIA still kinda relies on Xorg as a display manager and KDE by default uses wayland, you might first want to install compatibility with `sudo pacman -S xorg-xwayland`.
 
@@ -157,7 +157,7 @@ ___I would, in reality, recommend___ going through these steps instead:
 1. `reboot`.
 2. Instead of logging in as a user, use `ctrl+alt+F6` to go into a tty.
 3. Login as your user in the tty.
-4. `sudo pacman -S xorg-xwayland nvidia nvidia-utils nvidia-settings` (or `nvidia-open` instead of `nvidia`, up to you, though `nvidia-open` can sometimes have performance drops in comparison).
+4. `sudo pacman -S xorg-xwayland nvidia-open nvidia-utils nvidia-settings`
 5. `reboot`.
 
 If, after logging in to your desktop environment again, the cursor moves smoothly instead of like a powerpoint slideshow, then your drivers are functioning properly.
