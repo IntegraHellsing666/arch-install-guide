@@ -138,6 +138,8 @@ Lastly, `reboot` and, once off, remove the flash drive to ensure you get thrown 
 6. Download other packages you want, for example, by running `sudo pacman -S konsole kate firefox discord obsidian vlc gwenview dolphin`, anything really, just search for stuff you might want at https://archlinux.org/packages/ and type their names there. A terminal emulator like `konsole` or `kitty` are pretty much mandatory, the rest you can also just download later.
 7. Enable SDDM by running `systemctl enable sddm` and lastly `sudo systemctl enable --now sddm`.
 
+> If you wish to use GNOME, you will need to install `gnome` and `gdm` instead of plasma and sddm, respectively. For more information on getting it setup, go to https://wiki.archlinux.org/title/GNOME.
+
 With that, you should now be logging in to your desktop environment, enjoy.
 
 > To update your system packages, run `sudo pacman -Syu` whenever you want.
