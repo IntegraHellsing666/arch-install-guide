@@ -30,14 +30,15 @@ Should already be synced, though to make sure just run `timedatectl`
 There are wayyy too many partitioning schemes so this section is entirely up to preference, in which case please just refer to https://wiki.archlinux.org/title/Partitioning for more options, specially section __2.3 Example Layouts__.
 Here I'll just show a common one with three partitions, similar to what you'd get using Windows.
 
-1. Use `cfdisk`
-2. (If asked for label type) select __gpt__
-3. Delete all already existing partitions (use arrow keys to navigate and enter to confirm)
-4. To make a boot partition, select `free space`, `new`, and give it `1G`
-5. To make a swap partition, again `free space`, `new`, and give it at least 4GBs, though I'd recommend some 16 or more GBs `16G`
-6. To make the root partition, same step, but leave the size blank so it uses up all remaining space by default
-7. `write` and type `yes` to confirm
-8. `quit`
+1. Use `lsblk` or `fdisk -l` to see your drives and how they're split, usually your main drive would be called `sda`, or, if you have an NVMe SSD, `nvme0n1`, keep that drive in mind and adapt the rest of the partitioning having that in mind
+2. Use `cfdisk` (sometimes you might need to specify a particular drive, for example, with `cfdisk /dev/sda`)
+3. (If asked for label type) select __gpt__
+4. Delete all already existing partitions (use arrow keys to navigate and enter to confirm)
+5. To make a boot partition, select `free space`, `new`, and give it `1G`
+6. To make a swap partition, again `free space`, `new`, and give it at least 4GBs, though I'd recommend some 16 or more GBs `16G`
+7. To make the root partition, same step, but leave the size blank so it uses up all remaining space by default
+8. `write` and type `yes` to confirm
+9. `quit`
 
 To see the partitions, use `lsblk`.
 
