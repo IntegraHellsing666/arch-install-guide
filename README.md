@@ -146,7 +146,10 @@ With that, you should now be logging in to your desktop environment, enjoy.
 > Also, because I know you want steam, download it after your graphics drivers (next section) with `sudo pacman -S steam`
 
 ## Drivers
-If you have an AMD graphics card, congratulations your guide ended on the previous section.
+If you have an AMD graphics card, congratulations your guide ended on the previous section...kinda.
+You should still check out https://wiki.archlinux.org/title/AMDGPU and install a few packages, for example, `sudo pacman -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon`. If you're on x11 instead of wayland (read about hyfetch below, it also shows you which of these you're on), you might also wanna add `xf86-video-amdgpu` onto that list, again, check out the wiki link.
+Once you have that you move onto the [post-installation guide](Post-installation-guide.md).
+
 If you poor soul have a NVIDIA graphics card like me, don't worry, the driver installation process is much easier nowadays, though will still take a little research.
 
 Hopefully you already know your GPU model, but if you don't, then you can check it the extra nice way by downloading hyfetch and fastfetch with `sudo pacman -S hyfetch fastfetch`. Then `hyfetch -c`, select the options you want and after saving the configuration run `hyfetch`. Now you can both flex your new arch installation and know your GPU.
