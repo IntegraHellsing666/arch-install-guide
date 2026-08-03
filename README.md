@@ -132,7 +132,7 @@ Lastly, `reboot` and, once off, remove the flash drive to ensure you get thrown 
 
 ## Next steps for a nice working computer
 1. On the new installation, login as either root or your user.
-2. Make sure you have internet access by pinging a domain like at the start.
+2. Make sure you have internet access by pinging a domain like at the start. If you don't have internet access over Wi-Fi, use `nmcli device wifi list` to find local networks, and connect to the intented one with `nmcli device wifi connect [network name] password [password]`.
 3. Make sure your keyboard layout is the one you selected, if not then use `loadkeys` and then change it on the desktop environment you will soon have.
 4. Use `setfont -d` for better visibility if you wish.
 5. Download your desired desktop environment or window manager, for example KDE or hyprland (here I will show KDE), and SDDM, by running `sudo pacman -S plasma sddm`. Just press enter for the default installation options.
