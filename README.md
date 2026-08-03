@@ -118,7 +118,7 @@ To give your user a password, run `passwd [name]`. And again, make this differen
 Run `EDITOR=nano visudo`, scroll to the bottom until you see `Uncomment to allow members of group wheel to execute any command`, the line below that is what you need to uncomment so that it only says `%wheel ALL=(ALL) ALL`.
 
 ## Other adjustments before rebooting
-- To enable your network manager, run `systemctl enable NetworkManager`.
+- To enable your network manager, run `systemctl enable NetworkManager`. If you're using Wi-Fi, use `nmcli device wifi list` to find local networks, and connect to the intented one with `nmcli device wifi connect [network name] password [password]`.
 - If you have an SSD, do it a favour and run `systemctl enable fstrim.timer`.
 - To have your mirrorlist managed for you, `sudo pacman -S reflector` and `systemctl enable reflector.timer`
 - To have access to lots of official packages you'll want, like Steam, turn on multilib by running `nano /etc/pacman.conf`, scrolling down until you see `multilib` and uncommenting both the line that says `[multilib]` and the line below `Include = /etc/pacman.d/mirrorlist`. Save and then run sudo pacman -Sy for pacman to update the change.
@@ -132,7 +132,7 @@ Lastly, `reboot` and, once off, remove the flash drive to ensure you get thrown 
 
 ## Next steps for a nice working computer
 1. On the new installation, login as either root or your user.
-2. Make sure you have internet access by pinging a domain like at the start. If you don't have internet access over Wi-Fi, use `nmcli device wifi list` to find local networks, and connect to the intented one with `nmcli device wifi connect [network name] password [password]`.
+2. Make sure you have internet access by pinging a domain like at the start. If you don't have a connection, repeat the `nmcli` steps above.
 3. Make sure your keyboard layout is the one you selected, if not then use `loadkeys` and then change it on the desktop environment you will soon have.
 4. Use `setfont -d` for better visibility if you wish.
 5. Download your desired desktop environment or window manager, for example KDE or hyprland (here I will show KDE), and SDDM, by running `sudo pacman -S plasma sddm`. Just press enter for the default installation options.
